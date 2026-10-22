@@ -37,7 +37,7 @@ header{position:sticky;top:0;z-index:40;background:rgba(13,43,36,.92);backdrop-f
 .nav .btn{padding:11px 20px;font-size:15px}
 /* hero */
 .hero{background:var(--foret);color:var(--creme);position:relative;overflow:hidden;padding:72px 0 0}
-.hero .g{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}
+.hero .g{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:stretch}
 .by{display:flex;align-items:center;gap:16px;margin-bottom:34px;color:rgba(245,240,230,.6)}
 .by img{height:34px;width:auto}.by img.ip{height:46px}.by i{width:1px;height:28px;background:rgba(245,240,230,.25)}
 .hero h1{font-size:clamp(54px,8.4vw,128px);font-weight:800;letter-spacing:-.045em;line-height:.9}
@@ -49,11 +49,11 @@ header{position:sticky;top:0;z-index:40;background:rgba(13,43,36,.92);backdrop-f
 .hstats{display:flex;gap:44px;margin:56px 0 64px;padding-top:28px;border-top:1px solid rgba(245,240,230,.14)}
 .hstats div b{display:block;font-family:var(--t);font-size:42px;font-weight:800;color:var(--lime);letter-spacing:-.03em;line-height:1}
 .hstats div span{font-size:14px;color:rgba(245,240,230,.6)}
-.visual{position:relative;height:640px}
+.visual{position:relative;min-height:640px;height:100%}
 .ph{position:absolute;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.35)}
 .ph img{width:100%;height:100%;object-fit:cover}
-.ph1{left:0;top:0;width:68%;height:62%}
-.ph2{right:0;top:22%;width:46%;height:46%;border:6px solid var(--foret)}
+.ph1{left:0;top:40px;width:70%;height:56%}
+.ph2{right:0;top:30%;width:46%;height:40%;border:6px solid var(--foret)}
 .card{position:absolute;left:6%;bottom:0;width:78%;background:var(--creme);color:var(--foret);border-radius:24px 24px 0 0;padding:22px 24px 26px;box-shadow:0 -10px 60px rgba(0,0,0,.3)}
 .card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
 .card .top .mono{font-size:11px;color:var(--gris)}
@@ -168,7 +168,7 @@ footer{background:var(--foret);color:rgba(245,240,230,.7);padding:90px 0 36px;ma
 }
 @media(max-width:600px){
 .bento{grid-template-columns:1fr}.ag.w2,.ag.h2{grid-column:auto;grid-row:auto}.steps{grid-template-columns:1fr}
-form{grid-template-columns:1fr}.visual{height:500px}.ph2{display:none}.ph1{width:100%}.card{width:94%;left:3%}
+form{grid-template-columns:1fr}.visual{height:500px;min-height:0}.ph1{top:0}.ph2{display:none}.ph1{width:100%}.card{width:94%;left:3%}
 .nav .btn{display:none}.by img.ip{height:38px}.by img{height:26px}
 }
 </style>
